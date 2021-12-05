@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+        Awesome Template
+        http://www.templatemo.com/preview/templatemo_450_awesome
+        -->
+		<title>THE PROTON GUY</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+		<script src="{% static 'js/jquery.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery.singlePageNav.min.js' %}"></script>
+		<script src="{% static 'js/typed.js' %}"></script>
+		<script src="{% static 'js/wow.min.js' %}"></script>
+		<script src="{% static 'js/custom.js' %}"></script>
+	</head>
+	<body id="top">
+
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>
+    	<!-- end preloader -->
+
+        <!-- start header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-phone"></i><span> Phone</span>+2348141783687</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="theprotonguy1@gmail.com">theprotonguy1@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-4 col-xs-12">
+                        <ul class="social-icon">
+                            <li><span>Meet us on</span></li>
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UC8ty8cq1jU1EGF4AeLyq7ew" class="fa fa-youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+    	<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">THE PROTON GUY</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#top">HOME</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#team">TEAM</a></li>
+						<li><a href="#service">SERVICE</a></li>
+						<!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
+						<li><a href="#contact">CONTACT</a></li>
+						<li><a href="{% url 'blog-home' %}">BLOG</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end navigation -->
+
+    	<!-- start home -->
+    	<section id="home">
+			{% for message in messages %}
+				<div class="msg" style="padding: 10px; color: #fff; border-radius: 5px;">
+					<center>
+						<p>Thanks {{ name }}!</p>
+						{{ message }}
+					</center>
+				</div>
+			{% endfor %}
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-offset-2 col-md-8">
+    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">We make website that are <span>awesome</span></h1>
+    					<div class="element">
+                            <div class="sub-element">Hello there, Welcome.</div>
+                            <div class="sub-element">We design and build awesome and responsive websites.</div>
+                            <div class="sub-element">If you need a website, Kindly contact us.</div>
+                        </div>
+    					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">GET STARTED</a>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end home -->
+
+    	<!-- start about -->
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">ABOUT <span>US</span></h2>
+    				</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-heading-wrapper">
+								<div class="media-object pull-left">
+									<i class="fa fa-html5"></i>
+								</div>
+								<h3 class="media-heading">FULLY RESPONSIVE</h3>
+							</div>
+							<div class="media-body">
+								<p>We design, build, and deploy beautiful and responsive websites. We also offer specific services like UI/UX, Frontend, and Backend Development. An example of one of our works is this present website. It was built in django. Work with us today.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+						<div class="media">
+							<div class="media-heading-wrapper">
+								<div class="media-object pull-left">
+									<!-- <i class="fa fa-comment-o"></i> -->
+									<i class="fa fa-mobile"></i>
+								</div>
+								<h3 class="media-heading">WORDPRESS WEB DEVELOPMENT</h3>
+							</div>
+							<div class="media-body">
+								<p>Apart from developing websites through code, we are also into web development using wordpress. We will build fast, responsive, and mobile friendly websites in the shortest time possible.<a href="#contact"> Work with us</a> today</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-heading-wrapper">
+								<div class="media-object pull-left">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<h3 class="media-heading">PC Software Development</h3>
+							</div>
+							<div class="media-body">
+								<p>We have a department that deals with software development for laptops and computers. Our team is currently working on a virtual assistant. Click <a href="https://www.proton.theprotonguy.com">here</a> for more info</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end about -->
+
+    	<!-- start team -->
+    	<section id="team">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>OUR</span> TEAM</h2>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+    					<div class="team-wrapper">
+    						<img src="{% static 'images/ayodeji.jpg' %}" class="img-responsive" alt="team img 1">
+    							<div class="team-des">
+    								<h4>Ayodeji Adesola</h4>
+    								<span>CEO & Backend Developer</span>
+    								<p>Adesola Ayodeji, formally known as THE PROTON GUY, is the CEO of THEPROTONGUY company. He is a python and django backend developer. He is also a wordpress website developer and he lectures on youtube <a style="color: dodgerblue;" href="https://www.youtube.com/channel/UC8ty8cq1jU1EGF4AeLyq7ew">@THE PROTON GUY</a></p>
+    							</div>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+    					<div class="team-wrapper">
+    						<img src="{% static 'images/tochi.jpeg' %}" class="img-responsive" alt="team img 2">
+    							<div class="team-des">
+    								<h4>Tochi Nwanchukwu</h4>
+    								<span> UI/UX & Frontend Developer</span>
+    								<p>Tochi Nwanchukwu is a UI/UX, wordpress, and frontend software developer. His skills include Figma, wordpress, HTML, CSS, Javascript, and the javascript React framework. He is also a python developer.</p>
+    							</div>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+    					<div class="team-wrapper">
+    						<img src="{% static 'images/dare.jpg' %}" class="img-responsive" alt="team img 3">
+    							<div class="team-des">
+    								<h4>Dare Oguntuga</h4>
+    								<span>Backend Developer</span>
+    								<p>Dare is a python and backend website developer. He works with the python django backend web framework. His skills include building scalable and excellent backends for websites and building API'S.</p>
+    							</div>
+    					</div>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+    					<div class="team-wrapper">
+    						<img src="{% static 'images/member-1.jpg' %}" class="img-responsive" alt="team img 4">
+    							<div class="team-des">
+    								<h4>Giri Dharan</h4>
+    								<span>Data Scientist</span>
+    								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
+    							</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end team -->
+
+    	<!-- start service -->
+    	<section id="service">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">OUR <span>AWESOME</span> SERVICES</h2>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-laptop"></i>
+    					<h4>Web Design</h4>
+    					<p>We build beautiful, responsive, and scalable websites and deploy. Our Frontend and Backend developers work hand in hand to deliver the best for our clients. Our backend language of choice is python and our framework of choice is Django while for frontend, our framework of choice is react.</p>
+    				</div>
+    				<div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					<i class="fa fa-cloud"></i>
+    					<h4>Data Science</h4>
+    					<p>Apart from web design and software development,vwe also get our hands dirty with data science. Contact and work with us today!</p>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-cog"></i>
+    					<h4>UI/UX Design</h4>
+    					<p>We are design based and appearance driven. We create beautiful user interfaces as we all user friendly designs. We can bring your dreams to life. Contact us today!</p>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end servie -->
+
+    	<!-- start portfolio -->
+    	
+    	<!-- end portfolio -->
+
+    	<!-- start contact -->
+    	<section id="contact">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>THE PROTON GUY</span></h2>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+    					<form action="" method="POST">
+							{% csrf_token %}
+    						<label>NAME</label>
+    						<input name="fullname" type="text" class="form-control" id="fullname" name="name">
+   						  	
+                            <label>EMAIL</label>
+    						<input name="email" type="email" class="form-control" id="email" name="email">
+   						  	
+                            <label>MESSAGE</label>
+    						<textarea name="message" rows="4" class="form-control" id="message" name="message"></textarea>
+    						
+                            <input type="submit" class="form-control">
+    					</form>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+    					<address>
+    						<p class="address-title">OUR ADDRESS</p>
+    						<span>Victoria Garden City, Lekki, Lagos. Nigeria</span>
+    						<p><i class="fa fa-phone"></i> +2348141783687</p>
+    						<p><i class="fa fa-envelope-o"></i> theprotonguy1@gmail.com</p>
+    						<p><i class="fa fa-map-marker"></i> Lagos, Nigeria</p>
+    					</address>
+    					<ul class="social-icon">
+    						<li><h4>WE ARE SOCIAL</h4></li>
+    						<li><a href="#" class="fa fa-facebook"></a></li>
+    						<li><a href="#" class="fa fa-twitter"></a></li>
+    						<li><a href="https://www.youtube.com/channel/UC4yzoGuKkCL_8FzI-B-x83A" class="fa fa-youtube"></a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end contact -->
+
+        <!-- start copyright -->
+        <footer id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+                        THE PROTON GUY &copy; 2021. Work With Us Today!</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end copyright -->
+
+	</body>
+</html>
